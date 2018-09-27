@@ -1,0 +1,32 @@
+body {
+    border-bottom: 25px solid #81d8d0;
+}
+
+#pictures-bottom {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pictures-bottom > div {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.picture-bottom {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+#pictures-bottom > div:not(:first-child) > .picture-bottom {
+    padding-left: 10px;
+}
+
+#pictures-bottom > div:not(:last-child) > .picture-bottom {
+    padding-right: 10px;
+}
